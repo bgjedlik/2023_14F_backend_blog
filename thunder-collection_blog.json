@@ -1,45 +1,63 @@
 {
     "client": "Thunder Client",
     "collectionName": "blog",
-    "dateExported": "2023-12-13T11:25:41.159Z",
+    "dateExported": "2023-12-14T09:23:36.960Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "f88420b9-4a1d-4e75-8bdd-034197f4ca53",
-            "colId": "82b61e2d-090c-4b2b-b8ff-a8235326d9b5",
+            "_id": "80d87474-83a7-4eb3-b6d5-60ee1df65ebc",
+            "colId": "aecd9186-6b25-4f16-8b57-c98e76183c6e",
             "containerId": "",
             "name": "register",
             "url": "http://localhost:8000/api/register",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2023-12-13T10:05:49.703Z",
-            "modified": "2023-12-13T10:53:22.704Z",
+            "created": "2023-12-14T09:00:47.781Z",
+            "modified": "2023-12-14T09:03:25.192Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\" : \"\",\n  \"email\" : \"aaaa\",\n  \"password\" : \"\",\n  \"role\" : \"aaaa\"\n}",
+                "raw": "{\n  \"name\" : \"BG\",\n  \"email\" : \"bg@bg.hu\",\n  \"password\" : \"a\",\n  \"role\" : 0\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "c384f520-f817-4ac5-992c-a29afb0d2aa6",
-            "colId": "82b61e2d-090c-4b2b-b8ff-a8235326d9b5",
+            "_id": "7154a4fc-b689-43c9-ade6-efafe78f789a",
+            "colId": "aecd9186-6b25-4f16-8b57-c98e76183c6e",
             "containerId": "",
             "name": "login",
             "url": "http://localhost:8000/api/login",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2023-12-13T11:08:57.150Z",
-            "modified": "2023-12-13T11:09:57.862Z",
+            "created": "2023-12-14T09:00:47.782Z",
+            "modified": "2023-12-14T09:00:47.782Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
                 "raw": "{\n  \"email\" : \"bg@bg.hu\",\n  \"password\" : \"a\"\n}",
                 "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "831bada9-9aae-45ee-8969-6483dfe571c4",
+            "colId": "aecd9186-6b25-4f16-8b57-c98e76183c6e",
+            "containerId": "",
+            "name": "logout",
+            "url": "http://localhost:8000/api/logout",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-12-14T09:09:20.488Z",
+            "modified": "2023-12-14T09:18:44.788Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "6|9TNIyaniOC3rzxDYrjioQUEoZxi5mfLHHjmAXzgb25ad9f66"
             },
             "tests": []
         }
