@@ -17,6 +17,7 @@ class AuthController extends BaseController
       'name' => 'required',
       'email' => 'required|email|unique:App\Models\User,email',
       'password' => 'required',
+      'password_confirmation' => 'required|same:password',
       'role' => 'required|integer',
     ], [
       'name.required' => 'Kötelező kitölteni!',
@@ -24,6 +25,8 @@ class AuthController extends BaseController
       'email.email' => 'Hibás email cím!',
       'email.unique' => 'Az email cím már létezik!',
       'password.required' => 'Kötelező kitölteni!',
+      'password_confirmation.required' => 'Kötelező kitölteni!',
+      'password_confirmation.same' => 'A két a jelszó nem egyforma!',
       'role.required' => 'Kötelező kitölteni!',
       'role.integer' => 'Csak szám lehet!',
     ]);
